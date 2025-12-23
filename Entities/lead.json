@@ -1,0 +1,33 @@
+{
+    "name": "Lead",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "company": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "contacted",
+          "booked",
+          "closed"
+        ],
+        "default": "new"
+      }
+    },
+    "required": [
+      "name",
+      "email"
+    ]
+  }
